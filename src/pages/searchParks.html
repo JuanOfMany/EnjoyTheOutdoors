@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search for Parks</title>
+    <link href="../css/output.css" rel="stylesheet">
 </head>
-<body>
-    
+
+<body class="bg-[#121622]">
+    <div>
+        <div class="flex">
+            <form class="max-w-sm mx-auto">
+                <label for="locations" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a
+                    Location:</label>
+                <select id="locations"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Choose a Location</option>
+                </select>
+            </form>
+        </div>
+        <div class="flex">
+            <form class="max-w-sm mx-auto">
+                <label for="types" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a Park
+                    Type:</label>
+                <select id="park-types"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Choose a Type of Park</option>
+                </select>
+                <button id="show-all"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                Show All Parks</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="relative overflow-x-auto">
+        <table id="park-table" class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Park Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        City
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        State
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Website
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="../scripts/searchParks.js" type="module"></script>
 </body>
+
 </html>
