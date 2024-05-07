@@ -52,34 +52,35 @@
         </select>
     </form>
     </div>
-    <div class="container grid m-auto grid-cols-2 gap-4 items-center max-h-screen">
-        <div class="grid-rows-2 grid items-center">
-            <div class="grid grid-col-2 ml-2">
+    <div class="container grid grid-rows-2 m-auto mt-10 w-9/12 items-center max-h-screen">
+        <div class="grid grid-cols-2 m-auto items-end">
+            <div>
                 <div>
-                    <div class="">
-                        <h1 class="dark:text-white">Name:</h1>
-                        <h1 id="mt-name" class="dark:text-white text-2xl">Pick a Mountain</h1>
-                    </div>
-                    <h3 class="dark:text-white mt-3">Elevation:</h3>
-                    <h1 id="mt-elev" class="dark:text-white">Pick a Mountain</h1>
+                    <h1 class="dark:text-white text-center">Name:</h1>
+                    <h1 id="mt-name" class="dark:text-white text-5xl text-end">Pick a Mountain</h1>
                 </div>
-                <div>
-                    <h3 class="dark:text-white">Effort:</h3>
-                    <h1 id="mt-effort" class="dark:text-white">Pick a Mountain</h1>
+                <div class="text-end mr-16">
+                    <h3 class="dark:text-white mt-3">Elevation:</h3>
+                    <h1 id="mt-elev" class="dark:text-white text-2xl">Pick a Mountain</h1>
+                    <h3 class="dark:text-white mt-3">Effort:</h3>
+                    <h1 id="mt-effort" class="dark:text-white text-2xl">Pick a Mountain</h1>
+                    <h3 class="dark:text-white">Sunrise:</h3>
+                    <h3 id="mt-sunrise" class="dark:text-white text-2xl">Pick a Mountain</h3>
+                    <h3 class="dark:text-white mt-3">Sunset:</h3>
+                    <h3 id="mt-sunset" class="dark:text-white text-2xl">Pick a Mountain</h3>
                 </div>
             </div>
-            <div class="ml-2">
-                <h3 class="dark:text-white">Sunrise:</h3>
-                <h3 id="mt-sunrise" class="dark:text-white">Pick a Mountain</h3>
-                <h3 class="dark:text-white mt-3">Sunset:</h3>
-                <h3 id="mt-sunset" class="dark:text-white">Pick a Mountain</h3>
-                <h3 class="dark:text-white mt-3">Description:</h3>
+            <div>
+                <img id="mountain-img" src="../../assets/Lafayette-StoryImage_2.jpg" class="ml-2 object-fill">
+            </div>
+        </div>
+        <div class="m-auto mt-6 grid w-4/12">
+            <div>
+                <h3 class="dark:text-white text-3xl">Description:</h3>
                 <p id="mountain-desc" class="dark:text-white">Pick a Mountain</p>
             </div>
         </div>
-        <div>
-            <img id="mountain-img" src="../../assets/Lafayette-StoryImage_2.jpg" class="ml-2 object-fill">
-        </div>
+
     </div>
     <script type="module" src="../scripts/mountainInfo.js"></script>
 </body>

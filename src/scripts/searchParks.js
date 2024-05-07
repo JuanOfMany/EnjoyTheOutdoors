@@ -39,7 +39,7 @@ function populateTable(arrOfParks) {
         let stateCell = newRow.insertCell(2)
         let visitCell = newRow.insertCell(3)
         if (park.Visit) {
-            visitCell.innerHTML = `<a href=${park.Visit}>${park.Visit}</a>`
+            visitCell.innerHTML = `<a target="_blank" href=${park.Visit}>${park.Visit}</a>`
         } else {
             visitCell.innerHTML = 'No Website Listed.'
         }
